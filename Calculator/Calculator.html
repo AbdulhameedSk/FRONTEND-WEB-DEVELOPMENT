@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorstyle.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form name="calc">
+        <input type="text" name="display"><br>
+        <input type="button" value="1" onclick="calc.display.value +='1'" class="num">
+        <input type="button" value="2" onclick="calc.display.value +='2'" class="num">
+        <input type="button" value="3" onclick="calc.display.value +='3'" class="num">
+        
+        <input type="button" value="+" onclick="calc.display.value +='+'" class="operator"><br>
+        
+        <input type="button" value="4" onclick="calc.display.value +='4'" class="num">
+        <input type="button" value="5" onclick="calc.display.value +='5'" class="num">
+        <input type="button" value="6" onclick="calc.display.value +='6'" class="num">
+        
+        <input type="button" value="-" onclick="calc.display.value +='-'" class="operator"><br>
+
+        <input type="button" value="7" onclick="calc.display.value +='7'" class="num">
+        <input type="button" value="8" onclick="calc.display.value +='8'" class="num">
+        <input type="button" value="9" onclick="calc.display.value +='9'" class="num">
+        
+        <input type="button" value="*" onclick="calc.display.value +='*'" class="operator"><br>
+
+        <input type="button" value="C" onclick="calc.display.value=' '" class="opeartor">
+        <input type="button" value="0" onclick="calc.display.value +='0'" class="num">
+        <input type="button" value="=" onclick="calc.display.value =eval(calc.display.value)" class="operator"">
+        
+        <input type="button" value="/" onclick="calc.display.value +='/'" class="operator">
+    </form>
+</body>
+</html>
