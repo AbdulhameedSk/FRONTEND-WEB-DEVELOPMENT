@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grocerylist.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Grocery List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="groceries">
+            <h1 style="text-align:center;">Grocery List</h1>
+            <br>
+            <div style="text-align: center;">
+                <i class="material-icons" style="font-size: 35px;">create</i>
+                <input id="userInput" type="text">
+            </div>
+            <br>
+            <div id="allItems"></div>
+        </div>
+    </div>
+    <script>
+        const groceries = document.getElementsByClassName("groceries")[0];
+        const userInput = document.getElementById("userInput");
+        const allItems = document.getElementById("allItems");
+
+        userInput.addEventListener("keydown", function (event) {
+            if (event.key == "Enter")
+                addItem();
+        })
+
+        function addItem() {
+            var h2 = document.createElement("h2");
+            h2.innerHTML = "- " + userInput.value;
+            h2.addEventListener("click", function () {
+                h2.style.textDecoration = "line-through";
+            })
+            allItems.insertAdjacentElement("beforeend", h2);
+        }
+    </script>
+</body>
+
+</html>

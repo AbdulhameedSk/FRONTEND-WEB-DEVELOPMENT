@@ -1,0 +1,64 @@
+/* CSS */
+
+body {
+    font-family: Lucida Handwriting;
+    background: orange;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries {
+    border: 1px solid black;
+    width: 600px;
+    min-height: 700px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0 black;
+    padding: 20px;
+}
+
+.groceries h1 {
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.groceries i {
+    color: orange;
+    margin-right: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#userInput {
+    font-family: inherit;
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 70%;
+    font-size: 24px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#allItems h2 {
+    margin: 15px 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#allItems h2:hover {
+    text-decoration: underline;
+}
+
+#allItems h2:active {
+    color: gray;
+}
