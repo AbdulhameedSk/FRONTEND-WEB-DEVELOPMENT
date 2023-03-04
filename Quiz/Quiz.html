@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;color: white;">Quiz</h1>
+    <form name="quiz" id="quiz">
+        <div class="question">
+            <p>1. Who is known as Father of Indian Constitution?</p>
+            <p><input type="radio" name="question1" value="Charles Babbage">A. Charles Babbage</p>
+            <p><input type="radio" name="question1" value="Jawaharlal Nehru">B. Jawaharlal Nehru</p>
+            <p><input type="radio" name="question1" value="Mahantma Gandhi">C. Mahantma Gandhi</p>
+            <p><input type="radio" name="question1" value="Dr.B.R.Ambedkar">. Dr.B.R.Ambedkar</p>
+        </div>
+        <div class="question">
+            <p>2. What is the biggest country in the world?</p>
+            <p><input type="radio" name="question2" value="India">
+                A. India</p>
+            <p><input type="radio" name="question2" value="Russia">
+                B. Russia</p>
+            <p><input type="radio" name="question2" value="China">
+                C. China</p>
+            <p><input type="radio" name="question2" value="Canada">
+                D. Canada</p>
+        </div>
+        <div class="question">
+            <p>3. What is the biggest problem in the world now?</p>
+            <p><input type="radio" name="question3" value="Financial">. Financial problems</p>
+            <p><input type="radio" name="question3" value="Coronavirus">B. Coronavirus</p>
+            <p><input type="radio" name="question3" value="Economical">C. Economical problems</p>
+            <p><input type="radio" name="question3" value="none">
+                D. There is no problem</p>
+        </div>
+        <div class="question">
+            <p>4. Which is the most sensitive organ in our body?</p>
+            <p><input type="radio" name="question4" value="Skin">
+                A. Skin</p>
+            <p><input type="radio" name="question4" value="Eyes">
+                B. Eyes</p>
+            <p><input type="radio" name="question4" value="Tongue">
+                C. Tongue</p>
+            <p><input type="radio" name="question4" value="Hair">
+                D. Hair</p>
+        </div>
+        <div class="center">
+            <input type="button" value="I'm done" id="button" onclick="check()">
+        </div>
+    </form>
+    <p id="result"></p>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
