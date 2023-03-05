@@ -1,0 +1,92 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font family */
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+}
+
+/* Center form on page */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style form container */
+.form {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border-color: #141414;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style form header */
+.header {
+    color: #e50914;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style form input fields */
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-radius: 5px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Style form button */
+button[type="submit"] {
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: #f3f3f3;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Hide error messages by default */
+#email_error,
+#pass_error {
+    display: none;
+}
+
+/* Style error messages */
+#email_error::before,
+#pass_error::before {
+    content: "✖ ";
+    color: #e50914;
+}
+
+#email_error,
+#pass_error {
+    color: #e50914;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Add background image */
+body {
+    background-image: url('https://www.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/06/28/Pictures/_8a54204c-99fc-11e9-ba4b-b4cc3b13cc21.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
